@@ -1,14 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Samma stil */
+
+
+body, ul, ol, .img-container{
+    display:flex;
+}
+
+body, ul, ol{
+    flex-direction: column;
+}
+
+header, main {
+    max-width:100%;
+        width: 1280px;
+}
+
+ul, ol, .img-container{
+    gap:16px;
+}
+
+/**********************/
+
+
+body {
+    margin: 0;
+    background-color: rgba(161, 0, 0, 0.3);
+    align-items: center;
+}
+
 header {
     height: 500px;
     background: url('./imgs/pancakes-header.jpg') no-repeat center;
     background-size: cover;
 }
 
-body {
-    margin: 0;
+main {
+    background-color: white;
+    padding: 48px 48px 64px 48px;
+    margin-bottom: 24px;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+/* text style */
+
+main p {
+    font-size: 16px;
+}
+
+
+h1 {
+    color: rgba(161, 0, 0, 1);
+    font-size: 28px;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+
+.badge {
+    background: rgba(235, 235, 235, 1);
+    padding: 16px;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+/*******************/
+
+
+.servering-img {
+    width: 580px;
+    height: 467px;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .img-container{
+        flex-direction:column;
+    }
+    .img-container img{
+        width:100%;
+    }
 }
